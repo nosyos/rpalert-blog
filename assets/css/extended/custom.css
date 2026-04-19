@@ -228,15 +228,15 @@ body > * {
 .post-entry .entry-header h2 {
   color: var(--rp-text-primary);
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 1.25rem;
   letter-spacing: -0.02em;
   line-height: 1.4;
 }
 
 .post-entry .entry-content {
   color: var(--rp-text-secondary);
-  font-size: 0.85rem;
-  line-height: 1.5;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 /* Post meta in list */
