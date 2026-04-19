@@ -55,14 +55,6 @@ paginate = 10
 [outputs]
   home = ['HTML', 'RSS', 'JSON']
 
-[module]
-  [[module.mounts]]
-    source = 'content'
-    target = 'content'
-  [[module.mounts]]
-    source = '/Users/noseyoshitaka/Documents/blogs/dev-to/dev-to-articles/published'
-    target = 'content/posts/published'
-
 [markup]
   [markup.highlight]
     style = 'dracula'
