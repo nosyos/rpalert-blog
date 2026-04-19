@@ -1,0 +1,71 @@
+baseURL = 'https://rpalert.dev/blog/'
+languageCode = 'en'
+defaultContentLanguage = 'en'
+title = 'RPAlert Blog'
+theme = 'PaperMod'
+paginate = 10
+
+[params]
+  env = 'production'
+  description = 'The official RPAlert blog. Insights on web performance monitoring, Core Web Vitals, and building faster apps.'
+  author = 'RPAlert'
+  defaultTheme = 'dark'
+  disableThemeToggle = true
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  comments = false
+
+  [params.homeInfoParams]
+    Title = 'RPAlert Blog'
+    Content = 'Insights on web performance monitoring, Core Web Vitals, and building faster apps.'
+
+  [params.label]
+    text = 'RPAlert Blog'
+
+[params.assets]
+  favicon = '/favicon.ico'
+
+[menu]
+  [[menu.main]]
+    identifier = 'home'
+    name = 'Home'
+    url = '/'
+    weight = 10
+  [[menu.main]]
+    identifier = 'archives'
+    name = 'Archives'
+    url = '/archives/'
+    weight = 20
+  [[menu.main]]
+    identifier = 'tags'
+    name = 'Tags'
+    url = '/tags/'
+    weight = 30
+  [[menu.main]]
+    identifier = 'rpalert'
+    name = 'RPAlert'
+    url = 'https://rpalert.dev'
+    weight = 40
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+[module]
+  [[module.mounts]]
+    source = 'content'
+    target = 'content'
+  [[module.mounts]]
+    source = '/Users/noseyoshitaka/Documents/blogs/dev-to/dev-to-articles/published'
+    target = 'content/posts/published'
+
+[markup]
+  [markup.highlight]
+    style = 'dracula'
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
